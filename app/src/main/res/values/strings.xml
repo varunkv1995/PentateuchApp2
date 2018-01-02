@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">PentateuchApp</string>
+
+        <string name="opened">Drawer is Opened</string>
+        <string name="close">Drawer is Closed</string>
+
+
 </resources>
