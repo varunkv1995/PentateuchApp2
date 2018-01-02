@@ -1,23 +1,3 @@
 <resources>
     <string name="app_name">PentateuchApp</string>
-
-    <string name="about_us">
-            A Software affiliated services ,Own Application creation and Application creation based on the customer requirements,Software application and maintenance services ,
-        Product based application,Branding full service.
-        (i.e Mobile User interface and User experience development e-commerce,web development).
-
-
-            The company specializes primarily in developing and marketing database software and technology, cloud engineered systems and enterprise software products — particularly its own brands of own and customized application software.
-        The company also enterprise resource planning (ERP) software, customer relationship management (CRM) software and supply chain management (SCM) software. Enterprise Application Services, Independent Testing, Infrastructure Management Services and IT Strategy and Consulting,EAI BPM (Enterprise Application Integration and Business Process Management
-    </string>
-
-
-    <string name="app_design">
-         Apps power-up your lifestyle.
-         It changes the way you collaborate and communicate with your peers as well as dear and near ones – at work, at home or at play.
-    </string>
-    <string name="business">
-        We provide affordable web solutions for companies or individuals based on their needs and deliver high quality websites. Mainly, we are focused on meeting exceeding clients expectations at all times.
-    </string>
-
 </resources>

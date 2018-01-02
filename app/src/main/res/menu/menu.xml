@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_home"
+            android:title="About Us"
+            android:icon="@mipmap/ic_aboutus"
+            />
+        <item
+            android:id="@+id/menu_services"
+            android:title="Services"
+            android:icon="@mipmap/ic_service"/>
+        <item
+            android:id="@+id/menu_client"
+            android:title="Client"
+            android:icon="@mipmap/ic_client"/>
+        <item
+            android:id="@+id/menu_Technologies"
+            android:title="Technologies"
+            android:icon="@mipmap/ic_technologies"/>
+        <item
+            android:id="@+id/menu_contact"
+            android:title="Contact Us"
+            android:icon="@mipmap/ic_contact"/>
+    </group>
+</menu>
