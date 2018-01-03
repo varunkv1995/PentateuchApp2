@@ -1,16 +1,24 @@
 package com.teuch.pentateuchapp;
 
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
+import android.support.v4.graphics.drawable.RoundedBitmapDrawable;
+import android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.graphics.drawable.DrawerArrowDrawable;
 import android.support.v7.widget.Toolbar;
+import android.widget.ImageView;
 
+/**
+ * Created by Md.Saif on 03-01-2018.
+ */
 
-
-public class NavigationActivity extends AppCompatActivity {
+public class NavigationActivity extends AppCompatActivity
+ {
     private DrawerArrowDrawable drawerArrowDrawable;
     private DrawerLayout drawerLayout;
     private NavigationView navigationView;
@@ -28,4 +36,3 @@ public class NavigationActivity extends AppCompatActivity {
         drawerLayout.addDrawerListener(drawerToggle);
     }
 }
-
