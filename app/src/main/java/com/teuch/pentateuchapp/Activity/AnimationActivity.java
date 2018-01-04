@@ -1,4 +1,4 @@
-package com.teuch.pentateuchapp;
+package com.teuch.pentateuchapp.Activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -6,6 +6,8 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.teuch.pentateuchapp.R;
 
 public class AnimationActivity extends AppCompatActivity {
 

@@ -7,7 +7,7 @@
 
     android:layout_height="match_parent"
     android:background="@mipmap/tecno2"
-    tools:context="com.teuch.pentateuchapp.Tech_Activity">
+    tools:context="com.teuch.pentateuchapp.Activity.Tech_Activity">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"

@@ -1,4 +1,4 @@
-package com.teuch.pentateuchapp;
+package com.teuch.pentateuchapp.Adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -8,6 +8,8 @@ import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.teuch.pentateuchapp.R;
 
 /**
  * Created by varu on 03-01-2018.

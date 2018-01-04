@@ -2,12 +2,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.teuch.pentateuchapp.ClientFragment">
+    tools:context="com.teuch.pentateuchapp.Fragment.ClientFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="hello_blank_fragment" />
+        android:background="#b09a9a">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000"
+            android:id="@+id/toolbar" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Our Clients"
+                android:textColor="#fff"
+                android:textSize="25dp"/>
+
+        </android.support.v7.widget.Toolbar>
+
+
+        <GridView
+            android:id="@+id/simpleGridView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3"
+            android:horizontalSpacing="50dp"
+            android:verticalSpacing="50dp"
+            android:padding="5dp"
+            android:columnWidth="100dp"
+            android:layout_below="@+id/toolbar" />
+
+    </RelativeLayout>
 
 </FrameLayout>

@@ -1,4 +1,4 @@
-package com.teuch.pentateuchapp;
+package com.teuch.pentateuchapp.Activity;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -12,6 +12,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.graphics.drawable.DrawerArrowDrawable;
 import android.support.v7.widget.Toolbar;
 import android.widget.ImageView;
+
+import com.teuch.pentateuchapp.R;
 
 /**
  * Created by Md.Saif on 03-01-2018.

@@ -2,9 +2,8 @@
     <string name="app_name">PentateuchApp</string>
 
 
-        <string name="opened">Drawer is Opened</string>
-        <string name="close">Drawer is Closed</string>
-
+    <string name="opened">Drawer is Opened</string>
+    <string name="close">Drawer is Closed</string>
 
 
     <string name="about_us">
@@ -25,5 +24,6 @@
     <string name="business">
         We provide affordable web solutions for companies or individuals based on their needs and deliver high quality websites. Mainly, we are focused on meeting exceeding clients expectations at all times.
     </string>
+    <string name="title_activity_maps">Map</string>
 
 </resources>

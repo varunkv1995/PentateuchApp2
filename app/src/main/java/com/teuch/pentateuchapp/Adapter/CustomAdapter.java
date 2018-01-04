@@ -1,4 +1,4 @@
-package com.teuch.pentateuchapp;
+package com.teuch.pentateuchapp.Adapter;
 
 /**
  * Created by US76 on 03-01-2018.
@@ -10,6 +10,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
+
+import com.teuch.pentateuchapp.R;
+
 public class CustomAdapter extends BaseAdapter {
     Context context;
     int logos[];

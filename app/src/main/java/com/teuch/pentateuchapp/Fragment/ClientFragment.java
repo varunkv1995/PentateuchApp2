@@ -1,4 +1,4 @@
-package com.teuch.pentateuchapp;
+package com.teuch.pentateuchapp.Fragment;
 
 import android.content.Context;
 import android.net.Uri;
@@ -8,16 +8,18 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.teuch.pentateuchapp.R;
+
 
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link ServiceFragment.OnFragmentInteractionListener} interface
+ * {@link ClientFragment.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link ServiceFragment#newInstance} factory method to
+ * Use the {@link ClientFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class ServiceFragment extends Fragment {
+public class ClientFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -29,7 +31,7 @@ public class ServiceFragment extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
-    public ServiceFragment() {
+    public ClientFragment() {
         // Required empty public constructor
     }
 
@@ -39,11 +41,11 @@ public class ServiceFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment ServiceFragment.
+     * @return A new instance of fragment ClientFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static ServiceFragment newInstance(String param1, String param2) {
-        ServiceFragment fragment = new ServiceFragment();
+    public static ClientFragment newInstance(String param1, String param2) {
+        ClientFragment fragment = new ClientFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -64,7 +66,7 @@ public class ServiceFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_, container, false);
+        return inflater.inflate(R.layout.fragment_client, container, false);
     }
 
     // TODO: Rename method, update argument and hook method into UI event

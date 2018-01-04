@@ -1,4 +1,4 @@
-package com.teuch.pentateuchapp;
+package com.teuch.pentateuchapp.Activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -9,12 +9,8 @@ import android.widget.GridView;
  */
 
 
-import android.content.Intent;
-        import android.os.Bundle;
-        import android.support.v7.app.AppCompatActivity;
-        import android.view.View;
-        import android.widget.AdapterView;
-        import android.widget.GridView;
+import com.teuch.pentateuchapp.Adapter.CustomAdapter;
+import com.teuch.pentateuchapp.R;
 
 
 public class ClientActivity extends AppCompatActivity {
