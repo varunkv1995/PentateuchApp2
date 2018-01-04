@@ -1,6 +1,6 @@
 package com.teuch.pentateuchapp;
 
-<<<<<<< HEAD
+
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
@@ -156,35 +156,4 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-=======
 
-
-/**
- * Created by US76 on 03-01-2018.
- */
-
-import android.content.Intent;
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.GridView;
-
-
-public class MainActivity extends AppCompatActivity {
-    GridView simpleGrid;
-    int logos[] = {R.drawable.appex, R.drawable.aptara1, R.drawable.bbmp1, R.drawable.diacritech,
-            R.drawable.first_source, R.drawable.hdfc, R.drawable.innodata, R.drawable.linkedin,
-            R.drawable.seek, R.drawable.sigmax, R.drawable.thomsan, R.drawable.wexos,R.drawable.stars};
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.client1);
-        simpleGrid = (GridView) findViewById(R.id.simpleGridView); // init GridView
-
-        CustomAdapter customAdapter = new CustomAdapter(getApplicationContext(), logos);
-        simpleGrid.setAdapter(customAdapter);
-
-    }
-}
->>>>>>> origin/ClientLayout1
