@@ -7,7 +7,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class LoginActivity extends AppCompatActivity {
+public class AnimationActivity extends AppCompatActivity {
 
     ImageView logo;
     TextView textView;
@@ -17,7 +17,7 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.anim_activity);
         textView=(TextView)findViewById(R.id.text) ;
         logo=(ImageView)findViewById(R.id.logo);
         fromtop= AnimationUtils.loadAnimation(this,R.anim.fromtop);
