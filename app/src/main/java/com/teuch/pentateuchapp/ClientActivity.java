@@ -21,7 +21,7 @@ public class ClientActivity extends AppCompatActivity {
     GridView simpleGrid;
     int logos[] = {R.drawable.appex, R.drawable.aptara1, R.drawable.bbmp1, R.drawable.diacritech,
             R.drawable.first_source, R.drawable.hdfc, R.drawable.innodata, R.drawable.linkedin,
-            R.drawable.seek, R.drawable.sigmax, R.drawable.thomsan, R.drawable.wexos,R.drawable.stars};
+            R.drawable.seek, R.drawable.sigmax, R.drawable.thomsan, R.drawable.wexos,R.mipmap.ic_stars};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
