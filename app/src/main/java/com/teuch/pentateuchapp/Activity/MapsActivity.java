@@ -53,7 +53,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.setMyLocationEnabled( true );
 
         // Add a marker in bangalore and move the camera
-        LatLng bangalore = new LatLng( 12.951740, 77.491819 );
+        LatLng bangalore = new LatLng( 12.951678, 77.492052 );
         mMap.addMarker( new MarkerOptions().position( bangalore ).title( "Pentateuch Technologies" ) );
         mMap.moveCamera( CameraUpdateFactory.newLatLng( bangalore ) );
     }

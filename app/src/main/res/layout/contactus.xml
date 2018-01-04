@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#e0484646"
-    tools:context="com.example.mylaptop.pentateuchApp.MainActivity"
+    tools:context="com.teuch.pentateuchapp.Activity.ContactActivity"
     >
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
@@ -53,7 +53,7 @@
         android:textSize="21dp"
         android:background="#facfcdcd"
         android:textAlignment="textStart"
-        android:drawableLeft="@mipmap/ic_google1"
+        android:drawableLeft="@mipmap/ic_gmail"
         android:padding="3dp"
         />
 
@@ -69,7 +69,7 @@
         android:textColorHint="#fc969595"
         android:textSize="21dp"
         android:background="#facfcdcd"
-        android:drawableLeft="@mipmap/ic_fb"
+        android:drawableLeft="@mipmap/ic_facebook"
         android:padding="3dp" />
     <Button
         android:id="@+id/btn3"
