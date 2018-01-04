@@ -1,12 +1,12 @@
 <resources>
     <string name="app_name">PentateuchApp</string>
 
-<<<<<<<<< Temporary merge branch 1
+
         <string name="opened">Drawer is Opened</string>
         <string name="close">Drawer is Closed</string>
 
 
-=========
+
     <string name="about_us">
             A Software affiliated services ,Own Application creation and Application creation based on the customer requirements,Software application and maintenance services ,
         Product based application,Branding full service.
@@ -26,5 +26,4 @@
         We provide affordable web solutions for companies or individuals based on their needs and deliver high quality websites. Mainly, we are focused on meeting exceeding clients expectations at all times.
     </string>
 
->>>>>>>>> Temporary merge branch 2
 </resources>
