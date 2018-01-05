@@ -11,13 +11,15 @@ package com.teuch.pentateuchapp.Activity;
         import android.view.View;
         import android.widget.Button;
 
+        import com.teuch.pentateuchapp.R;
+
 public class ContactActivity extends AppCompatActivity {
     private Button button1, button2, button3, button4, button5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.contactus);
         button1 = (Button) findViewById(R.id.btn1);
         button2 = (Button) findViewById(R.id.btn2);
         button3 = (Button) findViewById(R.id.btn3);
