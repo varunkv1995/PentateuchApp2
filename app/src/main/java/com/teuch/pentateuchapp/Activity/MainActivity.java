@@ -11,6 +11,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.graphics.drawable.RoundedBitmapDrawable;
 import android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory;
+import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
@@ -150,14 +151,35 @@ public class MainActivity extends AppCompatActivity {
                 CURRENT_TAG = TAG_ABOUT;
                 break;
             case R.layout.fragment_:
-                currentIndex = 0;
+                currentIndex = 2;
                 CURRENT_TAG = TAG_SERVICE;
                 break;
             case R.layout.fragment_client:
-                currentIndex = 2;
+                currentIndex = 3;
                 CURRENT_TAG = TAG_CLIENTS;
+            case R.layout.fragment_technologies:
+                currentIndex = 4;
+                CURRENT_TAG = TAG_TECHNOLOGIES;
+            case R.layout.fragment_contact:
+                currentIndex = 5;
+                CURRENT_TAG = TAG_CONTACT;
         }
         this.loadFragment(R.anim.anim_fade_in_left,R.anim.anim_fade_out_right,true);
+    }
+    @Override
+    public void onBackPressed() {
+        if(drawerLayout.isDrawerOpen(GravityCompat.START)) {
+            drawerLayout.closeDrawers();
+            return;
+        }
+        if(currentIndex != 0)
+        {
+            currentIndex = 0;
+            CURRENT_TAG = TAG_ABOUT;
+            loadFragment(R.anim.anim_right,R.anim.anim_left,true);
+            return;
+        }
+        super.onBackPressed();
     }
 }
 
