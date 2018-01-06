@@ -47,12 +47,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.first_activity);
-        toolbar = (Toolbar)findViewById(R.id.toolbar);
+        toolbar = (Toolbar)findViewById(R.id.tool);
         setSupportActionBar(toolbar);
 
 
-       /*getSupportActionBar().setDisplayHomeAsUpEnabled(false);
-      getSupportActionBar().setHomeButtonEnabled(true);*/
+       getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+      getSupportActionBar().setHomeButtonEnabled(true);
 
 
         mainActivity = this;
@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
     }
     private void setDrawer() {
         drawerLayout = (DrawerLayout)findViewById(R.id.drawer_layout);
-        toolbar = (Toolbar)findViewById(R.id.tool);
+        //toolbar = (Toolbar)findViewById(R.id.tool);
         drawerToggle = new ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.opened,R.string.close);
         drawerToggle.setDrawerArrowDrawable(new DrawerArrowDrawable(this));
         drawerLayout.addDrawerListener(drawerToggle);
@@ -106,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
             drawerLayout.closeDrawers();
             return;
         }
-      //  getSupportActionBar().setTitle(CURRENT_TAG);
+        getSupportActionBar().setTitle(CURRENT_TAG);
         Runnable pendingRunnable = new Runnable() {
             @Override
             public void run() {

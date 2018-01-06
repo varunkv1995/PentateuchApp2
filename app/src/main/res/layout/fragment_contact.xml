@@ -3,7 +3,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.teuch.pentateuchapp.fragment.ContactFragment">
-
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -31,83 +33,131 @@
                 android:background="@mipmap/ic_l" />
 
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="vertical">
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
         <Button
             android:id="@+id/btn1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
-            android:layout_marginEnd="25dp"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
             android:hint="Write to us"
             android:textColorHint="#fc969595"
             android:textSize="21dp"
             android:background="#facfcdcd"
             android:textAlignment="textStart"
             android:drawableLeft="@mipmap/ic_gmail"
-            android:padding="3dp"
-            />
-
+            android:padding="2dp"
+            /></android.support.v7.widget.CardView>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="vertical">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
         <Button
             android:id="@+id/btn2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
-            android:layout_marginEnd="25dp"
-            android:layout_marginStart="25dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
             android:hint="Facebook us"
             android:textAlignment="textStart"
             android:textColorHint="#fc969595"
             android:textSize="21dp"
             android:background="#facfcdcd"
             android:drawableLeft="@mipmap/ic_facebook"
-            android:padding="3dp" />
+            android:padding="2dp" />
+            /></android.support.v7.widget.CardView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="vertical">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
         <Button
             android:id="@+id/btn3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="25dp"
-            android:layout_marginEnd="25dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
             android:hint="Connect with us"
             android:textAlignment="textStart"
             android:textColorHint="#fc969595"
             android:background="#facfcdcd"
-            android:padding="3dp"
+            android:padding="2dp"
             android:textSize="21dp"
             android:drawableLeft="@mipmap/ic_in"
             />
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="vertical">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
         <Button
             android:id="@+id/btn4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
-            android:layout_marginEnd="25dp"
-            android:layout_marginStart="25dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
             android:background="#facfcdcd"
             android:drawableLeft="@mipmap/ic_phn"
             android:hint="Talk to us"
             android:textAlignment="textStart"
-            android:padding="3dp"
+            android:padding="2dp"
             android:textColorHint="#fc969595"
             android:textSize="21dp"
             />
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="vertical">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
         <Button
             android:id="@+id/btn5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
-            android:layout_marginEnd="25dp"
-            android:layout_marginStart="25dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
             android:background="#facfcdcd"
             android:drawableLeft="@mipmap/ic_location"
             android:hint="Location"
-            android:padding="3dp"
+            android:padding="2dp"
             android:textAlignment="textStart"
             android:textColorHint="#fc969595"
             android:textSize="21dp"
             />
-
+        </android.support.v7.widget.CardView>
     </LinearLayout>
 
+    </LinearLayout>
+</ScrollView>
 </FrameLayout>

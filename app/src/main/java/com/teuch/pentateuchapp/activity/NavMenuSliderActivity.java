@@ -33,8 +33,8 @@ public class NavMenuSliderActivity extends AppCompatActivity implements ViewPage
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_slider);
         viewPager = (ViewPager)findViewById(R.id.viewpager);
-        tabLayout = (TabLayout)findViewById(R.id.tab);
-        linearLayout=(LinearLayout)findViewById(R.id.linear);
+        //tabLayout = (TabLayout)findViewById(R.id.tab);
+
         PagerAdapter pagerAdapter=new PagerAdapter(getSupportFragmentManager());
         pagerAdapter.addFragment(new AboutUsFragment(),"About Us");
         pagerAdapter.addFragment(new ServiceFragment(),"Services");
