@@ -1,4 +1,4 @@
-package com.teuch.pentateuchapp.Activity;
+package com.teuch.pentateuchapp.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

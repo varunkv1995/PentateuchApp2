@@ -1,4 +1,4 @@
-package com.teuch.pentateuchapp.Adapter;
+package com.teuch.pentateuchapp.adapter;
 
 /**
  * Created by US76 on 03-01-2018.

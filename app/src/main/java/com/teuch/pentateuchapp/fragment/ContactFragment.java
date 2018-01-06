@@ -1,4 +1,4 @@
-package com.teuch.pentateuchapp.Fragment;
+package com.teuch.pentateuchapp.fragment;
 
 import android.content.Context;
 import android.net.Uri;

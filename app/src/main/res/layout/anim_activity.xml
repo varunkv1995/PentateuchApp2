@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000"
-    tools:context="com.teuch.pentateuchapp.Activity.AnimationActivity">
+    tools:context="com.teuch.pentateuchapp.activity.AnimationActivity">
 
 
     <ImageView

@@ -1,4 +1,4 @@
-package com.teuch.pentateuchapp.Activity;
+package com.teuch.pentateuchapp.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -9,7 +9,7 @@ import android.widget.GridView;
  */
 
 
-import com.teuch.pentateuchapp.Adapter.CustomAdapter;
+import com.teuch.pentateuchapp.adapter.CustomAdapter;
 import com.teuch.pentateuchapp.R;
 
 

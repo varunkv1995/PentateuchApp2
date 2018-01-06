@@ -1,4 +1,4 @@
-package com.teuch.pentateuchapp.Fragment;
+package com.teuch.pentateuchapp.fragment;
 
 import android.content.Context;
 import android.net.Uri;
@@ -14,12 +14,12 @@ import com.teuch.pentateuchapp.R;
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link ServiceFragment.OnFragmentInteractionListener} interface
+ * {@link TechnologiesFragment.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link ServiceFragment#newInstance} factory method to
+ * Use the {@link TechnologiesFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class ServiceFragment extends Fragment {
+public class TechnologiesFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -31,7 +31,7 @@ public class ServiceFragment extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
-    public ServiceFragment() {
+    public TechnologiesFragment() {
         // Required empty public constructor
     }
 
@@ -41,11 +41,11 @@ public class ServiceFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment ServiceFragment.
+     * @return A new instance of fragment TechnologiesFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static ServiceFragment newInstance(String param1, String param2) {
-        ServiceFragment fragment = new ServiceFragment();
+    public static TechnologiesFragment newInstance(String param1, String param2) {
+        TechnologiesFragment fragment = new TechnologiesFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -66,7 +66,7 @@ public class ServiceFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_, container, false);
+        return inflater.inflate(R.layout.fragment_technologies, container, false);
     }
 
     // TODO: Rename method, update argument and hook method into UI event

@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:openDrawer="start"
     android:fitsSystemWindows="true"
-    tools:context="com.teuch.pentateuchapp.Activity.NavigationActivity">
+    tools:context="com.teuch.pentateuchapp.activity.NavigationActivity">
     <include layout="@layout/second_activity"
         android:layout_height="match_parent"
         android:layout_width="match_parent"/>

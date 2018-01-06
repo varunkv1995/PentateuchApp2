@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#e0484646"
-    tools:context="com.teuch.pentateuchapp.Activity.ContactActivity"
+    tools:context="com.teuch.pentateuchapp.activity.ContactActivity"
     >
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"

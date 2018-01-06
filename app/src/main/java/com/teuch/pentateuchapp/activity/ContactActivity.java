@@ -1,5 +1,5 @@
 
-package com.teuch.pentateuchapp.Activity;
+package com.teuch.pentateuchapp.activity;
 
         import android.Manifest;
         import android.content.Intent;

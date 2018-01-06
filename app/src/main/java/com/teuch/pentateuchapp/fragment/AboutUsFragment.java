@@ -1,4 +1,4 @@
-package com.teuch.pentateuchapp.Fragment;
+package com.teuch.pentateuchapp.fragment;
 
 import android.content.Context;
 import android.net.Uri;
@@ -14,12 +14,12 @@ import com.teuch.pentateuchapp.R;
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link ClientFragment.OnFragmentInteractionListener} interface
+ * {@link AboutUsFragment.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link ClientFragment#newInstance} factory method to
+ * Use the {@link AboutUsFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class ClientFragment extends Fragment {
+public class AboutUsFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -28,10 +28,10 @@ public class ClientFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-
+    private View rootView;
     private OnFragmentInteractionListener mListener;
 
-    public ClientFragment() {
+    public AboutUsFragment() {
         // Required empty public constructor
     }
 
@@ -41,11 +41,11 @@ public class ClientFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment ClientFragment.
+     * @return A new instance of fragment AboutUsFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static ClientFragment newInstance(String param1, String param2) {
-        ClientFragment fragment = new ClientFragment();
+    public static AboutUsFragment newInstance(String param1, String param2) {
+        AboutUsFragment fragment = new AboutUsFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -65,8 +65,9 @@ public class ClientFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_client, container, false);
+        rootView = inflater.inflate(R.layout.fragment_about_us,container,false);
+
+        return rootView;
     }
 
     // TODO: Rename method, update argument and hook method into UI event

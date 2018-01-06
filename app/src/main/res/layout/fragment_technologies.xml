@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.teuch.pentateuchapp.Fragment.TechnologiesFragment">
+    tools:context="com.teuch.pentateuchapp.fragment.TechnologiesFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -10,7 +10,7 @@
 
         android:layout_height="match_parent"
         android:background="@mipmap/tecno2"
-        tools:context="com.teuch.pentateuchapp.Activity.Tech_Activity">
+        tools:context="com.teuch.pentateuchapp.activity.Tech_Activity">
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"

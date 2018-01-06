@@ -1,4 +1,4 @@
-package com.teuch.pentateuchapp.Activity;
+package com.teuch.pentateuchapp.activity;
 
 
 import android.graphics.Bitmap;
@@ -20,11 +20,11 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.widget.ImageView;
 
-import com.teuch.pentateuchapp.Fragment.AboutUsFragment;
-import com.teuch.pentateuchapp.Fragment.ClientFragment;
-import com.teuch.pentateuchapp.Fragment.ContactFragment;
-import com.teuch.pentateuchapp.Fragment.ServiceFragment;
-import com.teuch.pentateuchapp.Fragment.TechnologiesFragment;
+import com.teuch.pentateuchapp.fragment.AboutUsFragment;
+import com.teuch.pentateuchapp.fragment.ClientFragment;
+import com.teuch.pentateuchapp.fragment.ContactFragment;
+import com.teuch.pentateuchapp.fragment.ServiceFragment;
+import com.teuch.pentateuchapp.fragment.TechnologiesFragment;
 import com.teuch.pentateuchapp.R;
 
 public class MainActivity extends AppCompatActivity {
