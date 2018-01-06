@@ -127,19 +127,18 @@ public class MainActivity extends AppCompatActivity {
         switch (currentIndex){
             case 0:
                 AboutUsFragment aboutUsFragment=new AboutUsFragment();
-                Toast.makeText(getApplicationContext()," m in abutus",Toast.LENGTH_LONG).show();
-                return aboutUsFragment;
+               return aboutUsFragment;
             case 1:
                 ServiceFragment serviceFragment=new ServiceFragment();
-                Toast.makeText(getApplicationContext()," m in service",Toast.LENGTH_LONG).show();
+
                 return serviceFragment;
             case 2:
                 ClientFragment clientFragment=new ClientFragment();
-                Toast.makeText(getApplicationContext()," m in client",Toast.LENGTH_LONG).show();
+
                 return clientFragment;
             case 3:
                 TechnologiesFragment technologiesFragment=new TechnologiesFragment();
-                Toast.makeText(getApplicationContext()," m in tech",Toast.LENGTH_LONG).show();
+               
                 return technologiesFragment;
             case 4:
                 ContactFragment contactFragment=new ContactFragment();
