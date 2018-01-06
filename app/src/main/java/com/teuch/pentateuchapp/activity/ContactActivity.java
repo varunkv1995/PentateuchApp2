@@ -28,7 +28,25 @@ public class ContactActivity extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.gmail.com")));
+/*
+
+
+                String to=editTextTo.getText().toString();
+                String subject=editTextSubject.getText().toString();
+                String message=editTextMessage.getText().toString();
+*/
+
+
+            /*    Intent email = new Intent(Intent.ACTION_SEND);
+                email.putExtra(Intent.EXTRA_EMAIL, new String[]{ to});
+                email.putExtra(Intent.EXTRA_SUBJECT, subject);
+                email.putExtra(Intent.EXTRA_TEXT, message);*/
+
+                //need this to prompts email client only
+              /*  email.setType("message/rfc822");
+
+                startActivity(Intent.createChooser(email, "Choose an Email client :"));*/
+                startActivity(new Intent(Intent.ACTION_SEND, Uri.parse("https://www.gmail.com")));
             }
         });
         button2.setOnClickListener(new View.OnClickListener() {

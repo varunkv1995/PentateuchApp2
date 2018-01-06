@@ -4,23 +4,28 @@
         <item
             android:id="@+id/menu_home"
             android:title="About Us"
-            android:icon="@mipmap/ic_aboutus"
+            android:icon="@mipmap/ic_about"
+
             />
         <item
             android:id="@+id/menu_services"
             android:title="Services"
-            android:icon="@mipmap/ic_service"/>
+            android:icon="@mipmap/ic_service"
+            />
         <item
             android:id="@+id/menu_client"
             android:title="Client"
-            android:icon="@mipmap/ic_client"/>
+            android:icon="@mipmap/ic_clients"
+            />
         <item
             android:id="@+id/menu_Technologies"
             android:title="Technologies"
-            android:icon="@mipmap/ic_technologies"/>
+            android:icon="@mipmap/ic_tech"
+          />
         <item
             android:id="@+id/menu_contact"
             android:title="Contact Us"
-            android:icon="@mipmap/ic_contact"/>
+            android:icon="@mipmap/ic_contact"
+            />
     </group>
 </menu>

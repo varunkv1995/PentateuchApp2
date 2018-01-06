@@ -19,6 +19,7 @@ import android.support.v7.graphics.drawable.DrawerArrowDrawable;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.teuch.pentateuchapp.fragment.AboutUsFragment;
 import com.teuch.pentateuchapp.fragment.ClientFragment;
@@ -46,23 +47,23 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.first_activity);
-        ImageView imageview = (ImageView) findViewById(R.id.profile_image);
-        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.circle);
-        RoundedBitmapDrawable roundedBitmapDrawable = RoundedBitmapDrawableFactory.create(getResources(), bitmap);
-        roundedBitmapDrawable.setCircular(true);
-        imageview.setImageDrawable(roundedBitmapDrawable);
         toolbar = (Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(false);
-        getSupportActionBar().setHomeButtonEnabled(true);
+
+
+       /*getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+      getSupportActionBar().setHomeButtonEnabled(true);*/
+
+
         mainActivity = this;
         CURRENT_TAG = TAG_ABOUT;
         handler = new Handler();
-        setDrawer();
+      setDrawer();
         loadFragment(android.R.anim.fade_in,android.R.anim.fade_out,true);
     }
     private void setDrawer() {
         drawerLayout = (DrawerLayout)findViewById(R.id.drawer_layout);
+        toolbar = (Toolbar)findViewById(R.id.tool);
         drawerToggle = new ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.opened,R.string.close);
         drawerToggle.setDrawerArrowDrawable(new DrawerArrowDrawable(this));
         drawerLayout.addDrawerListener(drawerToggle);
@@ -70,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
        navigationView = (NavigationView) findViewById(R.id.navigation_view);
        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+            public boolean onNavigationItemSelected(MenuItem item) {
                 drawerLayout.closeDrawers();
                 switch (item.getItemId()) {
                     case R.id.menu_home:
@@ -88,7 +89,6 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.menu_contact:
                         loadFragment(R.layout.fragment_contact);
                         break;
-
                 }
                 if (item.isChecked())
                     item.setChecked(false);
@@ -106,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
             drawerLayout.closeDrawers();
             return;
         }
-        getSupportActionBar().setTitle(CURRENT_TAG);
+      //  getSupportActionBar().setTitle(CURRENT_TAG);
         Runnable pendingRunnable = new Runnable() {
             @Override
             public void run() {
@@ -127,15 +127,19 @@ public class MainActivity extends AppCompatActivity {
         switch (currentIndex){
             case 0:
                 AboutUsFragment aboutUsFragment=new AboutUsFragment();
+                Toast.makeText(getApplicationContext()," m in abutus",Toast.LENGTH_LONG).show();
                 return aboutUsFragment;
             case 1:
                 ServiceFragment serviceFragment=new ServiceFragment();
+                Toast.makeText(getApplicationContext()," m in service",Toast.LENGTH_LONG).show();
                 return serviceFragment;
             case 2:
                 ClientFragment clientFragment=new ClientFragment();
+                Toast.makeText(getApplicationContext()," m in client",Toast.LENGTH_LONG).show();
                 return clientFragment;
             case 3:
                 TechnologiesFragment technologiesFragment=new TechnologiesFragment();
+                Toast.makeText(getApplicationContext()," m in tech",Toast.LENGTH_LONG).show();
                 return technologiesFragment;
             case 4:
                 ContactFragment contactFragment=new ContactFragment();
@@ -147,22 +151,25 @@ public class MainActivity extends AppCompatActivity {
     public void loadFragment(int id){
         switch (id){
             case R.layout.fragment_about_us:
-                currentIndex = 1;
+                currentIndex = 0;
                 CURRENT_TAG = TAG_ABOUT;
                 break;
             case R.layout.fragment_:
-                currentIndex = 2;
+                currentIndex = 1;
                 CURRENT_TAG = TAG_SERVICE;
                 break;
             case R.layout.fragment_client:
-                currentIndex = 3;
+                currentIndex = 2;
                 CURRENT_TAG = TAG_CLIENTS;
+                break;
             case R.layout.fragment_technologies:
-                currentIndex = 4;
+                currentIndex = 3;
                 CURRENT_TAG = TAG_TECHNOLOGIES;
+                break;
             case R.layout.fragment_contact:
-                currentIndex = 5;
+                currentIndex = 4;
                 CURRENT_TAG = TAG_CONTACT;
+
         }
         this.loadFragment(R.anim.anim_fade_in_left,R.anim.anim_fade_out_right,true);
     }

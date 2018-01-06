@@ -30,7 +30,9 @@
         android:layout_alignParentBottom="true"
         android:background="#490d0d0d"
         android:gravity="center"
-        android:orientation="horizontal"></LinearLayout>
+        android:orientation="horizontal">
+
+    </LinearLayout>
 
 </RelativeLayout>
 
