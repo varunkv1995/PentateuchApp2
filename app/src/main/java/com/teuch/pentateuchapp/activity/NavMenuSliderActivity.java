@@ -9,6 +9,7 @@ import android.text.Html;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.teuch.pentateuchapp.R;
 import com.teuch.pentateuchapp.adapter.PagerAdapter;
@@ -22,47 +23,44 @@ import com.teuch.pentateuchapp.fragment.TechnologiesFragment;
  * Created by Md.Saif on 05-01-2018.
  */
 
-public class NavMenuSliderActivity extends AppCompatActivity implements ViewPager.OnPageChangeListener{
-    ViewPager viewPager;
-    private LinearLayout linearLayout;
-    private TabLayout tabLayout;
-    private TextView[] textViews;
-    private  int[] colors;
+public class NavMenuSliderActivity extends AppCompatActivity implements ViewPager.OnPageChangeListener {
+
+    PagerAdapter adapterViewPager;
+    /* private LinearLayout linearLayout;
+     private TabLayout tabLayout;
+     private TextView[] textViews;
+     private  int[] colors;*/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_slider);
-        viewPager = (ViewPager)findViewById(R.id.viewpager);
-        //tabLayout = (TabLayout)findViewById(R.id.tab);
 
-        PagerAdapter pagerAdapter=new PagerAdapter(getSupportFragmentManager());
-        pagerAdapter.addFragment(new AboutUsFragment(),"About Us");
-        pagerAdapter.addFragment(new ServiceFragment(),"Services");
-        pagerAdapter.addFragment(new ClientFragment(),"Cliental");
-        pagerAdapter.addFragment(new TechnologiesFragment(),"Technologies");
-        pagerAdapter.addFragment(new ContactFragment(),"Contact");
+        final ViewPager vpPager = (ViewPager) findViewById(R.id.vpPager);
+                adapterViewPager = new PagerAdapter(getSupportFragmentManager());
+                vpPager.setAdapter(adapterViewPager);
+        vpPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
 
-       /* pagerAdapter.addFragment(new AboutUsFragment(),"Page 1");
-        pagerAdapter.addFragment(new ClientFragment(),"Page 2");
-        pagerAdapter.addFragment(new ServiceFragment(),"Page 3");
-        pagerAdapter.addFragment(new TechnologiesFragment(),"Page 4");
-        pagerAdapter.addFragment(new ContactFragment(),"Page 5");*/
-        viewPager.setAdapter(pagerAdapter);
-        viewPager.addOnPageChangeListener(this);
-        tabLayout.setupWithViewPager(viewPager);
+            // This method will be invoked when a new page becomes selected.
+            @Override
+            public void onPageSelected(int position) {
 
-        colors = new int[]{Color.YELLOW,Color.MAGENTA,Color.RED};
-        //BUTTON
-        textViews = new TextView[3];
-        for (int i=0;i<3;i++){
-            textViews[i] = new TextView(this);
-            textViews[i].setText(Html.fromHtml("&#8226;"));
-            textViews[i].setTextSize(30);
-            textViews[i].setTextColor(Color.WHITE);
-            linearLayout.addView(textViews[i]);
-        }
-        textViews[0].setTextColor(colors[0]);
-    }
+            }
+
+            // This method will be invoked when the current page is scrolled
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+                // Code goes here
+            }
+
+            // Called when the scroll state changes:
+            // SCROLL_STATE_IDLE, SCROLL_STATE_DRAGGING, SCROLL_STATE_SETTLING
+            @Override
+            public void onPageScrollStateChanged(int state) {
+                // Code goes here
+            }
+        });
+            }
+
     @Override
     public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
 
@@ -70,10 +68,7 @@ public class NavMenuSliderActivity extends AppCompatActivity implements ViewPage
 
     @Override
     public void onPageSelected(int position) {
-        for(int i=0;i<textViews.length;i++)
-            textViews[i].setTextColor(Color.WHITE);
-        textViews[position].setTextColor(colors[position]);
-        tabLayout.setSelectedTabIndicatorColor(colors[position]);
+
     }
 
     @Override
@@ -81,7 +76,5 @@ public class NavMenuSliderActivity extends AppCompatActivity implements ViewPage
 
     }
 
-
-}
-
-
+    // ...
+        }

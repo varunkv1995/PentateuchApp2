@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/client"
+    android:background="@drawable/client">
+
+    <TextView
+        android:id="@+id/textclient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clients"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:textSize="25dp"
+        android:textColor="#ecffffff"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="&quot;We partner we commit, we success, we execute your plan&quot; "
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/technologies"
+        android:layout_marginTop="60dp"
+        android:id="@+id/slider_desc"
+
+
+        />
+
+</LinearLayout>

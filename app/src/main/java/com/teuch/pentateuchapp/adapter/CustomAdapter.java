@@ -39,13 +39,13 @@ public class CustomAdapter extends BaseAdapter {
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
 
-        LayoutInflater layoutInflater= (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
-
 
 
         if (view==null)
         {
-         view=   layoutInflater.inflate(R.layout.activity_gridview, null);
+            LayoutInflater layoutInflater= (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
+
+            view=   layoutInflater.inflate(R.layout.activity_gridview, null);
             // inflate the layout
             ImageView icon = (ImageView) view.findViewById(R.id.icon); // get the reference of ImageView
             icon.setImageResource(logos[i]);

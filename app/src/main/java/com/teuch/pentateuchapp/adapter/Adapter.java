@@ -15,18 +15,11 @@ import com.teuch.pentateuchapp.R;
  */
 
 
-public class adapter extends BaseAdapter {
+public class Adapter extends BaseAdapter {
     int images[];
 
-    public adapter(Context context) {
-        this.context = context;
-    }
-
-    Context context;
-    GridView g;
-    View view;
-
-    public adapter(Context context, int[] image) {
+  Context context;
+  public Adapter(Context context, int[] image) {
         this.context = context;
         this.images=image;
 

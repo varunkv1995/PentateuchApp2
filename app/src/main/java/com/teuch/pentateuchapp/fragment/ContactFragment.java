@@ -21,7 +21,8 @@ public class ContactFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-
+static int page;
+    static String title;
 
     public ContactFragment() {
         // Required empty public constructor
@@ -43,6 +44,14 @@ public class ContactFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_contact, container, false);
     }
 
+    public static Fragment newInstance(int i, String s) {
+        ServiceFragment fragmentFirst = new ServiceFragment();
+        Bundle args = new Bundle();
+        args.putInt("someInt", page);
+        args.putString("someTitle", title);
+        fragmentFirst.setArguments(args);
+        return fragmentFirst;
+    }
 }
 
 

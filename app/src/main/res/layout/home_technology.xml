@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/textView"
+    android:background="@drawable/technologies">
+
+
+    <TextView
+        android:id="@+id/technologies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Technologies"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:textSize="25dp"
+        android:textColor="#ecffffff"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="&quot;Committed to innovation ideas &quot; "
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/technologies"
+        android:layout_marginTop="60dp"
+        android:id="@+id/slider_desc"
+
+        />
+
+
+</LinearLayout>

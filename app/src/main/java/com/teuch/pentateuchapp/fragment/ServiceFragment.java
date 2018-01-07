@@ -21,6 +21,8 @@ public class ServiceFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+    static int page;
+   static   String title;
 
 
     public ServiceFragment() {
@@ -46,5 +48,13 @@ public class ServiceFragment extends Fragment {
     }
 
 
+    public static Fragment newInstance(int i, String s) {
+        ContactFragment fragmentFirst = new ContactFragment();
+        Bundle args = new Bundle();
+        args.putInt("someInt", page);
+        args.putString("someTitle", title);
+        fragmentFirst.setArguments(args);
+        return fragmentFirst;
+    }
 }
 
