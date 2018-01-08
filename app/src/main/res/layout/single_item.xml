@@ -2,22 +2,34 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
+    android:padding="6dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+<android.support.v7.widget.CardView
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
-    <android.support.v7.widget.CardView
-        app:cardBackgroundColor="#669ce7"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
 
     <ImageView
+        android:layout_margin="10sp"
+        android:layout_gravity="center"
         android:id="@+id/image11"
-        android:layout_width="126dp"
-       android:layout_height="126dp" />
+        android:layout_width="126sp"
+        android:layout_height="126sp"
+        />
 
 
 </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+
 
 
 
