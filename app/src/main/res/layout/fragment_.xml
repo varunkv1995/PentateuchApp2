@@ -1,4 +1,4 @@
-<ScrollView
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,55 +10,102 @@
     android:orientation="vertical"
     android:background="#000"
     android:layout_height="wrap_content">
-
-    <ImageView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/aptara1"/>
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="212dp"
+
+                android:background="@drawable/services" >
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="85sp"
+                    android:text="What We Are"
+                    android:textStyle="bold"
+                    android:textColor="#bfffffff"
+                    android:textSize="25dp" />
+            </LinearLayout>
 
 
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
 
-        <LinearLayout
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    >
+
+    <LinearLayout
             android:layout_width="match_parent"
             android:orientation="horizontal"
             android:layout_height="wrap_content">
-            <LinearLayout
-                android:layout_weight="1"
-                android:layout_margin="5sp"
-                android:background="#3bd4ca"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@mipmap/ic_m"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:layout_height="wrap_content"
-                    android:text="App Design"/>
 
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_weight="1"
-                android:background="#3bd4ca"
-                android:layout_margin="5sp"
-                android:layout_height="wrap_content">
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@mipmap/ic_business"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:layout_height="wrap_content"
-                    android:text="Business Analysis"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:layout_weight="1"
+            android:background="#c7c0c0">
 
-            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/ic_webdesign" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Web Design"
+                android:textColor="#000"
+                android:textStyle="bold" />
+
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:layout_weight="1"
+            android:background="#c7c0c0">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/ic_webapp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Web Appliction"
+                android:textColor="#000"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -74,7 +121,8 @@
                 android:id="@+id/textView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/about_us"
+                android:text="@string/web_design"
+                android:gravity="center"
                 android:textAlignment="textStart"/>
         </LinearLayout>
 
@@ -87,16 +135,111 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/business"
+                android:text="@string/web_app"
                 android:textAlignment="textStart"/>
         </LinearLayout>
 
     </LinearLayout>
 
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_margin="5sp"
+                android:background="#c7c0c0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/ic_seo"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:text="SEO/SEM"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:background="#c7c0c0"
+                android:layout_margin="5sp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/ic_analysis"/>
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Analysis"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/seo"
+                        android:gravity="center"
+                        android:textAlignment="textStart"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/analysis"
+                        android:textAllCaps="false"
+                        android:textAlignment="textStart"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+    </LinearLayout>
+
 </LinearLayout>
+    </ScrollView>
+
+    </LinearLayout>
 
 
 
 
-</ScrollView>
+
+
+</FrameLayout>

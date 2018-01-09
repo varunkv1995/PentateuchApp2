@@ -10,7 +10,7 @@ android:layout_height="200dp">
     android:id="@+id/profile_image"
     android:layout_width="120sp"
     android:layout_height="120sp"
-    android:src="@mipmap/ic_logo"
+    android:src="@drawable/pentateuchlogo1"
     app:civ_border_width="2dp"
     app:civ_border_color="#FF000000"/>
 

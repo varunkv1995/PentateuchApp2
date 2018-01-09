@@ -1,11 +1,9 @@
 package com.teuch.pentateuchapp.activity;
 
-
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
@@ -14,14 +12,17 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.graphics.drawable.DrawerArrowDrawable;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
-
+import android.widget.ImageView;
 import com.teuch.pentateuchapp.R;
+import com.teuch.pentateuchapp.adapter.HomeAdapter;
 import com.teuch.pentateuchapp.fragment.AboutUsFragment;
 import com.teuch.pentateuchapp.fragment.ClientFragment;
 import com.teuch.pentateuchapp.fragment.ContactFragment;
+import com.teuch.pentateuchapp.fragment.HomeFragment;
 import com.teuch.pentateuchapp.fragment.ServiceFragment;
 import com.teuch.pentateuchapp.fragment.TechnologiesFragment;
 
+import me.relex.circleindicator.CircleIndicator;
 public class MainActivity extends AppCompatActivity implements ViewPager.OnPageChangeListener {
     private DrawerArrowDrawable drawerArrowDrawable;
     private DrawerLayout drawerLayout;
@@ -34,6 +35,11 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
     private Handler handler;
     private com.teuch.pentateuchapp.adapter.PagerAdapter adapter;
     private ViewPager viewPager;
+     ImageView imageView;
+     private CircleIndicator circleIndicator;
+    private ViewPager mpager;
+    private HomeAdapter homeAdapter;
+    private final String TAG_HOME = "Home";
     private final String TAG_ABOUT = "AboutUs";
     private final String TAG_SERVICE = "Service";
     private final String TAG_CLIENTS = "Clients";
@@ -47,6 +53,7 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
         setSupportActionBar(toolbar);
         viewPager = (ViewPager) findViewById(R.id.viewpager);
         adapter = new com.teuch.pentateuchapp.adapter.PagerAdapter(getSupportFragmentManager());
+        adapter.add(new HomeFragment());
         adapter.add(new AboutUsFragment());
         adapter.add(new ServiceFragment());
         adapter.add(new ClientFragment());
@@ -54,10 +61,7 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
         adapter.add(new ContactFragment());
         viewPager.setAdapter(adapter);
         viewPager.addOnPageChangeListener(this);
-        setTitle("About Us");
-     //  getSupportActionBar().setDisplayHomeAsUpEnabled(false);
-     // getSupportActionBar().setHomeButtonEnabled(true);
-
+        setTitle("Home");
 
         mainActivity = this;
      //   CURRENT_TAG = TAG_ABOUT;
@@ -82,21 +86,25 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
                         //loadFragment(R.layout.fragment_about_us);
                         viewPager.setCurrentItem(0);
                         break;
+                    case R.id.menu_About:
+                        //loadFragment(R.layout.fragment_about_us);
+                        viewPager.setCurrentItem(1);
+                        break;
                     case R.id.menu_services:
                         //loadFragment(R.layout.fragment_);
-                        viewPager.setCurrentItem(1);
+                        viewPager.setCurrentItem(2);
                         break;
                     case R.id.menu_client:
                         //loadFragment(R.layout.fragment_client);
-                        viewPager.setCurrentItem(2);
+                        viewPager.setCurrentItem(3);
                         break;
                     case R.id.menu_Technologies:
                         //loadFragment(R.layout.fragment_technologies);
-                        viewPager.setCurrentItem(3);
+                        viewPager.setCurrentItem(4);
                         break;
                     case R.id.menu_contact:
                         //loadFragment(R.layout.fragment_contact);
-                        viewPager.setCurrentItem(4);
+                        viewPager.setCurrentItem(5);
                         break;
                 }
                 if (item.isChecked())
@@ -140,60 +148,68 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
 
 
 
-    private Fragment getFragment() {
+   /* private Fragment getFragment() {
         switch (currentIndex){
             case 0:
+                toolbar.setTitle("Home");
+                HomeFragment homeFragment=new HomeFragment();
+                return homeFragment;
+            case 1:
                 toolbar.setTitle("About Us");
                 AboutUsFragment aboutUsFragment=new AboutUsFragment();
-               return aboutUsFragment;
-            case 1:
+                return aboutUsFragment;
+            case 2:
                 toolbar.setTitle("Services");
                 ServiceFragment serviceFragment=new ServiceFragment();
 
                 return serviceFragment;
-            case 2:
+            case 3:
                 toolbar.setTitle("Clients");
                 ClientFragment clientFragment=new ClientFragment();
 
                 return clientFragment;
-            case 3:
+            case 4:
                 toolbar.setTitle("Technologies");
                 TechnologiesFragment technologiesFragment=new TechnologiesFragment();
 
                 return technologiesFragment;
-            case 4:
+            case 5:
                 toolbar.setTitle("Contact US");
                 ContactFragment contactFragment=new ContactFragment();
                 return contactFragment;
 
         }
         return null;
-    }
-    public void loadFragment(int id){
+    }*/
+    /*public void loadFragment(int id){
         switch (id){
-            case R.layout.fragment_about_us:
+            case R.layout.fragment_home:
                 currentIndex = 0;
+                CURRENT_TAG = TAG_HOME;
+                break;
+            case R.layout.fragment_about_us:
+                currentIndex = 1;
                 CURRENT_TAG = TAG_ABOUT;
                 break;
             case R.layout.fragment_:
-                currentIndex = 1;
+                currentIndex = 2;
                 CURRENT_TAG = TAG_SERVICE;
                 break;
             case R.layout.fragment_client:
-                currentIndex = 2;
+                currentIndex = 3;
                 CURRENT_TAG = TAG_CLIENTS;
                 break;
             case R.layout.fragment_technologies:
-                currentIndex = 3;
+                currentIndex = 4;
                 CURRENT_TAG = TAG_TECHNOLOGIES;
                 break;
             case R.layout.fragment_contact:
-                currentIndex = 4;
+                currentIndex = 5;
                 CURRENT_TAG = TAG_CONTACT;
 
         }
         //this.loadFragment(R.anim.anim_fade_in_left,R.anim.anim_fade_out_right,true);
-    }
+    }*/
     @Override
     public void onBackPressed() {
         if(drawerLayout.isDrawerOpen(GravityCompat.START)) {
@@ -202,8 +218,8 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
         }
         if(currentIndex != 0)
         {
-            currentIndex = 0;
-            CURRENT_TAG = TAG_ABOUT;
+            viewPager.setCurrentItem(0);
+           // CURRENT_TAG = TAG_HOME;
             //loadFragment(R.anim.anim_right,R.anim.anim_left,true);
             return;
         }
@@ -217,16 +233,19 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
 
     @Override
     public void onPageSelected(int position) {
+        currentIndex = position;
         switch (position){
-            case 0:setTitle("About Us");
+            case 0:setTitle("Home");
                 break;
-            case 1:setTitle("Services");
+            case 1:setTitle("About Us");
                 break;
-            case 2:setTitle("Client");
+            case 2:setTitle("Services");
                 break;
-            case 3:setTitle("Technologies");
+            case 3:setTitle("Client");
                 break;
-            case 4:
+            case 4:setTitle("Technologies");
+                break;
+            case 5:
                 setTitle("Contact Us");
                 break;
         }

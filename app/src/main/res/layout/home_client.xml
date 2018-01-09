@@ -18,13 +18,13 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="&quot;We partner we commit, we success, we execute your plan&quot; "
+        android:text="&quot;We partner.we commit.we success.we execute your plan&quot; "
         android:textColor="@android:color/white"
         android:textSize="15sp"
         android:textStyle="bold"
         android:gravity="center_horizontal"
         android:layout_below="@+id/technologies"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="100dp"
         android:id="@+id/slider_desc"
 
 

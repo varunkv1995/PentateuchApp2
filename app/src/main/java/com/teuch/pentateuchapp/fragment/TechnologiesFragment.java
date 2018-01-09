@@ -10,13 +10,14 @@ import android.view.ViewGroup;
 import android.widget.GridView;
 
 import com.teuch.pentateuchapp.R;
+import com.teuch.pentateuchapp.adapter.Adapter;
 import com.teuch.pentateuchapp.adapter.CustomAdapter;
 
 
 public class TechnologiesFragment extends Fragment {
 
  GridView gridView;
-  int images[]={R.mipmap.ic_net,R.mipmap.ic_azur,R.mipmap.ic_android3,R.mipmap.ic_fram,R.mipmap.ic_herku,R.mipmap.ic_java,R.mipmap.ic_rfid,R.mipmap.ic_koha,R.mipmap.ic_salescree};
+  int images[]={R.mipmap.ic_azur,R.mipmap.ic_android3,R.mipmap.ic_fram,R.mipmap.ic_herku,R.mipmap.ic_java,R.mipmap.ic_rfid,R.mipmap.ic_koha,R.mipmap.ic_salescree};
 
     public TechnologiesFragment() {
         // Required empty public constructor
@@ -26,14 +27,11 @@ public class TechnologiesFragment extends Fragment {
 
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootview = inflater.inflate(R.layout.fragment_technologies, container, false);
-
-        gridView = (GridView) rootview.findViewById(R.id.grid1); // init GridView
-        CustomAdapter customAdapter = new CustomAdapter(getActivity(), images);
-        gridView.setAdapter(customAdapter);
+         gridView = (GridView) rootview.findViewById(R.id.grid1); // init GridView
+        Adapter adapter=new Adapter(getActivity(),images);
+        gridView.setAdapter(adapter);
         return rootview;
 
     }

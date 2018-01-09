@@ -3,8 +3,14 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/menu_home"
+            android:title="Home"
+            android:icon="@mipmap/ic_home"
+
+            />
+        <item
+            android:id="@+id/menu_About"
             android:title="About Us"
-            android:icon="@mipmap/ic_about"
+            android:icon="@mipmap/ic_aboutus"
 
             />
         <item

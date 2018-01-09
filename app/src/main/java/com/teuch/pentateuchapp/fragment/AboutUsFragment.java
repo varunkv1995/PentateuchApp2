@@ -33,7 +33,7 @@ public class AboutUsFragment extends Fragment  {
                              Bundle savedInstanceState) {
         rootView = inflater.inflate(R.layout.fragment_about_us, container, false);
 
-        viewPager = (ViewPager) rootView.findViewById(R.id.vpPager);
+
         //tabLayout = (TabLayout)rootView.findViewById(R.id.tab);
 
 

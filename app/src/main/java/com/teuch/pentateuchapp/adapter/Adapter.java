@@ -43,9 +43,10 @@ public class Adapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
-        LayoutInflater layoutInflater = (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
 
         if(convertView==null){
+            LayoutInflater layoutInflater = (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
+
             convertView=layoutInflater.inflate(R.layout.single_item,null);
             ImageView imageView=(ImageView)convertView.findViewById(R.id.image11);
             imageView.setImageResource(images[position]);

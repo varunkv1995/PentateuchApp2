@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">PentateuchApp</string>
+    <string name="app_name">Pentateuch</string>
 
 
     <string name="opened">Drawer is Opened</string>
@@ -10,20 +10,34 @@
             A Software affiliated services ,Own Application creation and Application creation based on the customer requirements,Software application and maintenance services ,
         Product based application,Branding full service.
         (i.e Mobile User interface and User experience development e-commerce,web development).
+            Pentateuch Technologies, a brainchild of two innovative entrepreneurs who were an integral part of ZEN Educata Network for over 15 years who have been involved in making a difference to more than thousands of individuals. Zen Educata Network, in its 22 years of existence has been transforming lives and organizations by continuously training people ranging from artists, scientists, engineers, elite government officials, students, teachers, and many others from various walks of life with scientific and spiritual training systems by delivering on commitments and promises of individuals and other businesses.
 
-
-            The company specializes primarily in developing and marketing database software and technology, cloud engineered systems and enterprise software products — particularly its own brands of own and customized application software.
-        The company also enterprise resource planning (ERP) software, customer relationship management (CRM) software and supply chain management (SCM) software. Enterprise Application Services, Independent Testing, Infrastructure Management Services and IT Strategy and Consulting,EAI BPM (Enterprise Application Integration and Business Process Management
+Nurtured in a very productive, transformative and an efficient environment, the founders Dinesh Sundara Rajan and Jyotsana Raju have been into this continuous process of training and development to make this an exceptional company.
     </string>
 
 
-    <string name="app_design">
-         Apps power-up your lifestyle.
-         It changes the way you collaborate and communicate with your peers as well as dear and near ones – at work, at home or at play.
+    <string name="web_design">
+        We take special pride in knowing that Pentateuch Technologies websites
+        and apps correspond to the current industry best practices.
+
     </string>
+    <string name="web_app">
+        Pentateuch Technologies One of our goals is to help creative people with ideas for useful web application realize their visions.
+    </string>
+    <string name="seo">
+       Turn your site into an effective marketing tool. We use white hat methods to identify valuable keyword territories for your organization..
+    </string>
+    <string name="analysis">
+        Pentateuch Technologies, is a Cloud Data Service Analytics Tool which can import your data instantly, and process it by issuing queries which runs in parallel on the cloud.
+
+    </string>
+
     <string name="business">
         We provide affordable web solutions for companies or individuals based on their needs and deliver high quality websites. Mainly, we are focused on meeting exceeding clients expectations at all times.
     </string>
     <string name="title_activity_maps">Map</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

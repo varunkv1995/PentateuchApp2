@@ -49,5 +49,7 @@ public class HomeAdapter extends PagerAdapter {
         View view =(View)object;
         container.removeView(view);
     }
+
+
 }
 
